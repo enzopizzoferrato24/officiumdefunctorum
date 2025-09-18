@@ -1,0 +1,79 @@
+OFFICIUM DEFUNCTORUM - OFFICE OF THE DEAD WEBSITE
+LICENSE AGREEMENT
+
+Copyright (c) 2025 Canticum Salomonis
+All rights reserved.
+
+LITURGICAL CONTENT LICENSE
+==========================
+
+The liturgical texts, translations, and rubrics contained in this website are based on:
+- The 1568 Roman Breviary
+- The 1614 Roman Ritual  
+- The Douay-Rheims Bible translation
+
+These traditional liturgical texts are in the public domain and may be used freely for religious, educational, and scholarly purposes.
+
+WEBSITE CODE LICENSE (MIT LICENSE)
+==================================
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+FONT LICENSES
+=============
+
+EB Garamond Font Family:
+- Licensed under SIL Open Font License 1.1
+- Copyright (c) 2010-2013 Georg Duffner
+- Full license: https://scripts.sil.org/OFL
+
+Lasance Initials Font:
+- Traditional liturgical typography
+- Usage permitted for religious and educational purposes
+- Contact Canticum Salomonis for commercial licensing
+
+CONTENT USAGE GUIDELINES
+========================
+
+PERMITTED USES:
+- Personal prayer and devotion
+- Educational and scholarly research
+- Non-commercial religious websites
+- Parish and church resources
+- Academic study of liturgical texts
+
+ATTRIBUTION REQUIRED:
+When using substantial portions of this work, please include:
+"Based on Officium Defunctorum by Canticum Salomonis"
+"Website: https://sicutincensum.wordpress.com/"
+
+RESTRICTIONS:
+- Do not alter liturgical texts without proper notation
+- Maintain theological accuracy in any derivatives
+- Respect the sacred nature of the content
+- Commercial use requires permission from Canticum Salomonis
+
+DISCLAIMER
+==========
+
+This website is provided for educational and devotional purposes. While every effort has been made to ensure liturgical accuracy, users should consult official Church sources for authoritative liturgical guidance.
+
+The creators are not responsible for any theological interpretations or liturgical practices based on this material. Users are encouraged to seek proper ecclesiastical guidance for liturgical implementation.
+
+CONTACT INFORMATION
+==================
+
+For permissions, corrections, or inquiries:
+Email: canticumsalomonis@gmail.com
+Website: https://sicutincensum.wordpress.com/
+
+---
+
+"Requiem aeternam dona eis, Domine, et lux perpetua luceat eis."
+(Eternal rest grant unto them, O Lord, and let perpetual light shine upon them.)
+
+Last Updated: September 2025
