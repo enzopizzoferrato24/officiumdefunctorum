@@ -27,6 +27,19 @@
             <img src="/visuals/miseremini.png" alt="Miseremini" class="decorative-image">
         </div>
         <h1>Matins</h1>
+
+        <div class="prayer-selection">
+            <label for="nocturne-select">Nocturn of the Day</label>
+            <select id="nocturne-select" onchange="navigateToNocturne()">
+                <option value="">Select a Day</option>
+                <option value="nocturne1">Monday</option>
+                <option value="nocturne2">Tuesday</option>
+                <option value="nocturne3">Wednesday</option>
+                <option value="nocturne1">Thursday</option>
+                <option value="nocturne2">Friday</option>
+                <option value="nocturne3">Saturday</option>
+            </select>
+        </div>
         
         <p class="rubric">¶ When three Nocturns are said, the Antiphons are doubled, and the Office commences with the Invitatory and Psalm 94 Otherwise it begins at once with the first Antiphon. If one Nocturn be said, the first is said on Monday and Thursday; the second on Tuesday and Friday; and third on Wednesday and Saturday.</p>
 
@@ -159,6 +172,9 @@
         </div>
 
         <div class="section-break"></div>
+
+        <div class="prayer-content">
+            <div id="nocturne1" class="section-break">
 
         <h2 class="section-title">First Nocturn</h2>
         <p class="rubric">For Monday and Thursday.</p>
@@ -699,8 +715,13 @@
                 <span class="response-symbol">℟.</span> O Lord, when thou comest to judge the earth, where shall I hide myself from the face of thy wrath? <span class="rubric asterisk">*</span> For I have sinned exceedingly in my life.<br><span class="versicle-symbol">℣.</span> I am afraid of my sins, and I blush before thee: when thou comest to judge, condemn me not. <span class="rubric asterisk">*</span> For I have sinned.
             </div>
         </div>
+        </div>
+    </div>
 
         <div class="section-break"></div>
+
+        <div class="prayer-content">
+                <div id="nocturne2" class="section-break">
 
         <h2 class="section-title">Second Nocturn</h2>
         <p class="rubric">For Tuesday and Friday.</p>
@@ -1331,8 +1352,13 @@
                 <span class="response-symbol">℟.</span> Remember not my sins, O Lord: <span class="rubric asterisk">*</span> When thou comest to judge the world by fire. <br><span class="versicle-symbol">℣.</span> Direct, O Lord my God, my way in thy sight. <span class="rubric asterisk">*</span> When thou comest.
             </div>
         </div>
+        </div>
+    </div>
 
         <div class="section-break"></div>
+
+        <div class="prayer-content">
+                <div id="nocturne3" class="section-break">
 
         <h2 class="section-title">Third Nocturn</h2>
         <p class="rubric">For Wednesday and Saturday.</p>
@@ -1799,6 +1825,8 @@
                 <span class="response-symbol">℟.</span> Deliver me O Lord from eternal death, in that tremendous day: <span class="rubric asterisk">*</span> When the heavens and the earth shall be moved, <span class="rubric asterisk">*</span> When thou shalt come to judge the world by fire. <br><span class="versicle-symbol">℣.</span> I am made to tremble, and I fear, when the trial shall come, and the wrath to come. <span class="rubric asterisk">*</span> When the heavens. <br><span class="versicle-symbol">℣.</span> That day, the day of wrath, of calamity and misery, the day great and exceeding bitter. <span class="rubric asterisk">*</span> When thou shalt come. <br><span class="versicle-symbol">℣.</span> Eternal rest grant unto them O Lord: and let everlasting light shine upon them. <span class="rubric asterisk">*</span> Deliver me.
             </div>
         </div>
+        </div>
+    </div>
 
         <div class="section-break"></div>
 
@@ -2092,5 +2120,18 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function navigateToNocturne() {
+            const select = document.getElementById('nocturne-select');
+            const sectionId = select.value;
+            if (sectionId) {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+    </script>
 </body>
 </html>
