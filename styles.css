@@ -177,9 +177,9 @@ header nav ul li a {
     text-decoration: none !important; /* Override WebKit underline */
     cursor: default !important; /* Override WebKit cursor */
     font-weight: bold;
-    background-color: #000000;
+    background-color: #000000 !important;
     padding: 8px 15px;
-    border: 2px solid #000000;
+    border: 2px solid #000000 !important;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
