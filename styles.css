@@ -680,7 +680,7 @@ header nav:not(nav ul) a:hover {
     left: 8px;
     top: 50%;
     transform: translateY(-50%);
-    color: #666;
+    color: #000000;
     font-weight: bold;
     font-size: 14px;
     line-height: 1;
