@@ -84,6 +84,14 @@
   font-style: italic;
 }
 
+/*Font for the big title */
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('caligraphy/LibreBaskerville-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
 /* Font-face declaration for Lasance Initials */
 @font-face {
   font-family: 'Lasance Initials';
@@ -176,8 +184,9 @@ section {
 }
 
 h1, h2 {
-  font-weight: normal;
-  text-align: center;
+    font-family: 'LibreBaskerville';
+    font-weight: normal;
+    text-align: center;
 }
 
 .versicle, .response {
