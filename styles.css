@@ -116,34 +116,36 @@ body {
   text-align: justify; /* Added to justify body text */
 }
 /* Header Styles */
+/* Header Styles */
 header {
-    background-color: #000000; /* Black as requested */
+    background-color: #000000;
     color: #d4b038;
     padding: 15px;
     text-align: center;
-    width: 100vw; /* Full viewport width */
-    position: relative; /* Ensure it respects document flow */
+    width: 100vw;
+    position: relative;
     left: 50%;
     right: 50%;
-    margin-left: -50vw; /* Center by offsetting half viewport */
+    margin-left: -50vw;
     margin-right: -50vw;
-    margin-top: -20px; /* Remove white space at top */
+    margin-top: -20px;
 }
 header h1 {
     font-family: 'Libre Baskerville', serif;
 }
 header h1 a {
-    text-decoration: none; /* Remove underline */
-    color: #d4b038; /* Match nav text color */
-    background-color: #444; /* Button-like background */
-    border: 2px solid #666; /* Button border */
-    border-radius: 5px; /* Rounded corners */
-    display: inline-block; /* Make it button-like */
+    text-decoration: none !important; /* Override WebKit underline */
+    color: #d4b038 !important; /* Override WebKit color */
+    cursor: default !important; /* Override WebKit cursor */
+    background-color: #444;
+    border: 2px solid #666;
+    border-radius: 5px;
+    display: inline-block;
     padding: 10px 20px;
-    transition: background-color 0.3s; /* Smooth hover effect */
+    transition: background-color 0.3s;
 }
 header h1 a:hover {
-    background-color: #666; /* Darker on hover */
+    background-color: #666;
 }
 nav ul {
     list-style: none;
@@ -154,35 +156,36 @@ nav ul {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    justify-content: center; /* Center the non-absolutely positioned items */
+    justify-content: center;
 }
 nav li:first-child {
     position: absolute;
-    left: 0; /* Home stays on the left */
+    left: 0;
 }
 nav li:last-child {
     position: absolute;
-    right: 0; /* Purchase moves to the right */
+    right: 0;
 }
 nav li:not(:first-child):not(:last-child) {
-    margin: 0 15px; /* Spacing for centered links */
+    margin: 0 15px;
 }
 nav li {
     display: inline;
 }
 header nav ul li a {
-    color: #d4b038 !important; /* Increased specificity and forced override */
-    text-decoration: none;
+    color: #d4b038 !important; /* Override WebKit color */
+    text-decoration: none !important; /* Override WebKit underline */
+    cursor: default !important; /* Override WebKit cursor */
     font-weight: bold;
-    background-color: #333; /* Button background */
+    background-color: #333;
     padding: 8px 15px;
     border: 2px solid #555;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 header nav ul li a:hover {
-    text-decoration: none; /* Remove underline on hover */
-    background-color: #555; /* Darker on hover */
+    text-decoration: none !important; /* Ensure no underline on hover */
+    background-color: #555;
 }
 main {
     margin-top: 20px;
