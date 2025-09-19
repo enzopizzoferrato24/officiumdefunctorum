@@ -671,12 +671,25 @@ header nav:not(nav ul) a:hover {
     transform: translateY(-50%);
     color: #666;
     font-weight: bold;
+    font-size: 14px; /* Match the input's font size */
+    line-height: 1; /* Ensure consistent line height */
+    pointer-events: none; /* Prevent interaction with the symbol */
 }
 
 .amount-input input {
-    position: relative;
-    display: inline-block;
     padding-left: 25px;
+    width: 100%; /* Ensure input fills the container */
+    box-sizing: border-box; /* Include padding in width calculation */
+    font-size: 14px; /* Match the currency symbol's font size */
+    line-height: 1; /* Match the currency symbol's line height */
+}
+
+/* Style the placeholder to match the currency symbol */
+.amount-input input::placeholder {
+    color: #666; /* Match the currency symbol's color */
+    font-weight: bold; /* Match the currency symbol's weight */
+    font-size: 14px; /* Match the input and currency font size */
+    line-height: 1; /* Ensure consistent alignment */
 }
 
 .checkbox-group label {
@@ -759,7 +772,7 @@ header nav:not(nav ul) a:hover {
 .store-link.german { border-color: #607D8B; color: #607D8B; }
 .store-link.dutch { border-color: #FF5722; color: #FF5722; }
 .store-link.polish { border-color: #E91E63; color: #E91E63; }
-.store-link.swedish { border-color: #FFEB3B; color: #F57F17; }
+.store-link.swedish { border-color: #F57F17; color: #F57F17; }
 
 .store-link:hover {
     background-color: currentColor;
