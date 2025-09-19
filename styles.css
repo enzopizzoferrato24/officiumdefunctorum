@@ -674,6 +674,8 @@ header nav:not(nav ul) a:hover {
 }
 
 .amount-input input {
+    position: relative;
+    display: inline-block;
     padding-left: 25px;
 }
 
