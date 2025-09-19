@@ -137,15 +137,15 @@ header h1 a {
     text-decoration: none !important; /* Override WebKit underline */
     color: #d4b038 !important; /* Override WebKit color */
     cursor: default !important; /* Override WebKit cursor */
-    background-color: #444;
-    border: 2px solid #666;
+    background-color: #000000;
+    border: 2px solid #000000;
     border-radius: 5px;
     display: inline-block;
     padding: 10px 20px;
     transition: background-color 0.3s;
 }
 header h1 a:hover {
-    background-color: #666;
+    background-color: #292929;
 }
 nav ul {
     list-style: none;
