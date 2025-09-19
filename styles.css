@@ -666,30 +666,33 @@ header nav:not(nav ul) a:hover {
 
 .currency {
     position: absolute;
-    left: 12px;
+    left: 8px; /* Adjusted for better spacing */
     top: 50%;
     transform: translateY(-50%);
     color: #666;
     font-weight: bold;
-    font-size: 14px; /* Match the input's font size */
-    line-height: 1; /* Ensure consistent line height */
-    pointer-events: none; /* Prevent interaction with the symbol */
+    font-size: 14px; /* Match input and placeholder */
+    line-height: 1; /* Consistent vertical alignment */
+    pointer-events: none; /* Prevent interaction with symbol */
+    z-index: 1; /* Ensure symbol is above input */
 }
 
 .amount-input input {
-    padding-left: 25px;
-    width: 100%; /* Ensure input fills the container */
-    box-sizing: border-box; /* Include padding in width calculation */
-    font-size: 14px; /* Match the currency symbol's font size */
-    line-height: 1; /* Match the currency symbol's line height */
+    width: 100%; /* Fill container */
+    box-sizing: border-box; /* Include padding in width */
+    padding-left: 24px; /* Increased padding to accommodate $ symbol */
+    font-size: 14px; /* Match currency and placeholder */
+    line-height: 1; /* Consistent alignment */
+    border: 1px solid #ccc; /* Ensure input has a visible border */
+    height: 32px; /* Standard height for alignment */
 }
 
 /* Style the placeholder to match the currency symbol */
 .amount-input input::placeholder {
-    color: #666; /* Match the currency symbol's color */
-    font-weight: bold; /* Match the currency symbol's weight */
-    font-size: 14px; /* Match the input and currency font size */
-    line-height: 1; /* Ensure consistent alignment */
+    color: #666; /* Match currency symbol */
+    font-weight: bold; /* Match currency symbol */
+    font-size: 14px; /* Match input and currency */
+    line-height: 1; /* Consistent alignment */
 }
 
 .checkbox-group label {
