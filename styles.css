@@ -693,17 +693,17 @@ header nav:not(nav ul) a:hover {
 }
 
 .currency {
-    position: absolute;
-    left: 8px;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
+    display: inline-block; /* Ensures currency symbol stays inline with input */
     color: #000000;
     font-weight: bold;
     font-size: 14px;
     line-height: 1;
-    font-family: Arial, sans-serif; /* Explicit font for consistency */
+    font-family: Arial, sans-serif;
     pointer-events: none; /* Prevent interaction */
     z-index: 2; /* Ensure above input */
+    margin-right: -20px; /* Pulls currency symbol into the input field */
+    vertical-align: middle; /* Aligns with input text */
 }
 
 .amount-input input {
@@ -712,10 +712,10 @@ header nav:not(nav ul) a:hover {
     padding-left: 24px; /* Space for $ symbol */
     font-size: 14px;
     line-height: 1;
-    font-family: Arial, sans-serif; /* Match currency font */
-    height: 32px; /* Fixed height for alignment */
-    border: 1px solid #ccc; /* Visible border */
-    border-radius: 4px; /* Optional: improve appearance */
+    font-family: Arial, sans-serif;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .amount-input input::placeholder {
@@ -723,7 +723,7 @@ header nav:not(nav ul) a:hover {
     font-weight: bold;
     font-size: 14px;
     line-height: 1;
-    font-family: Arial, sans-serif; /* Match input and currency */
+    font-family: Arial, sans-serif;
     padding-left: 24px; /* Space for $ symbol */
 }
 
