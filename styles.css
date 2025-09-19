@@ -659,40 +659,43 @@ header nav:not(nav ul) a:hover {
 }
 
 .amount-input {
-    position: relative;
-    display: inline-block;
-    width: 120px;
+            position: relative;
+            display: inline-block;
+            width: 120px;
 }
 
 .currency {
     position: absolute;
-    left: 8px; /* Adjusted for better spacing */
+    left: 8px;
     top: 50%;
     transform: translateY(-50%);
     color: #666;
     font-weight: bold;
-    font-size: 14px; /* Match input and placeholder */
-    line-height: 1; /* Consistent vertical alignment */
-    pointer-events: none; /* Prevent interaction with symbol */
-    z-index: 1; /* Ensure symbol is above input */
+    font-size: 14px;
+    line-height: 1;
+    font-family: Arial, sans-serif; /* Explicit font for consistency */
+    pointer-events: none; /* Prevent interaction */
+    z-index: 2; /* Ensure above input */
 }
 
 .amount-input input {
-    width: 100%; /* Fill container */
-    box-sizing: border-box; /* Include padding in width */
-    padding-left: 24px; /* Increased padding to accommodate $ symbol */
-    font-size: 14px; /* Match currency and placeholder */
-    line-height: 1; /* Consistent alignment */
-    border: 1px solid #ccc; /* Ensure input has a visible border */
-    height: 32px; /* Standard height for alignment */
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 24px; /* Space for $ symbol */
+    font-size: 14px;
+    line-height: 1;
+    font-family: Arial, sans-serif; /* Match currency font */
+    height: 32px; /* Fixed height for alignment */
+    border: 1px solid #ccc; /* Visible border */
+    border-radius: 4px; /* Optional: improve appearance */
 }
 
-/* Style the placeholder to match the currency symbol */
 .amount-input input::placeholder {
-    color: #666; /* Match currency symbol */
-    font-weight: bold; /* Match currency symbol */
-    font-size: 14px; /* Match input and currency */
-    line-height: 1; /* Consistent alignment */
+    color: #666;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    font-family: Arial, sans-serif; /* Match input and currency */
 }
 
 .checkbox-group label {
