@@ -505,7 +505,7 @@ footer {
 .crucifixion-image {
   max-width: 100%;
   height: auto;
-  max-height: 250px; /* Slightly larger than decorative-image */
+  max-height: 450px; /* Slightly larger than decorative-image */
   object-fit: contain;
   border: 2px solid #ffffff; /* Matches liturgical red */
   border-radius: 4px; /* Consistent with other elements */
