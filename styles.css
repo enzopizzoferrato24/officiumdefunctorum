@@ -707,6 +707,7 @@ header nav:not(nav ul) a:hover {
     font-size: 14px;
     line-height: 1;
     font-family: Arial, sans-serif; /* Match input and currency */
+    padding-left: 24px; /* Space for $ symbol */
 }
 
 .checkbox-group label {
@@ -721,7 +722,7 @@ header nav:not(nav ul) a:hover {
 }
 
 .submit-btn {
-    background-color: #2d4a2b;
+    background-color: #120b0b;
     color: white;
     padding: 15px 30px;
     border: none;
