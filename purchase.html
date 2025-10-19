@@ -65,21 +65,17 @@
 
         <section class="commission-prayer">
             <h2 class="section-title">COMMISSION PRAYER</h2>
-            
             <div class="commission-content">
                 <div class="commission-text">
                     <p><span class="lettrine red">F</span>or centuries, wealthy Christians, mindful of Christ's teaching that it is easier for a camel to pass through the eye of a needle than for a rich person to enter the kingdom of heaven, sought to work out their salvation with fear and trembling. Unable to fully heed the call to "sell everything and give it to the poor," they established foundations, monasteries, and chantries—endowments to fund Masses and the Office of the Dead for the forgiveness of sins, both known and unknown.</p>
-                    
                     <p>This purgatorial economy not only offered mercy for themselves and their loved ones but also gave rise to hospitals, schools, and orphanages dedicated to praying for their founders' souls. Though modern secularism has diminished these practices, the urgent need for prayer for the dead persists. This initiative revives that sacred tradition by offering stipends for literate laymen to recite the Office, interceding for souls in purgatory.</p>
-                    
                     <div class="stipend-info">
                         <p><strong>Stipend:</strong> $10 per Office (or more, as you are able).</p>
                         <p><strong>Payment:</strong> You'll receive instructions to send payment directly to the pray-er. We are not providing tax-deductible receipts at this stage.</p>
                     </div>
                 </div>
-                
                 <div class="commission-form">
-                    <form id="commissionForm" action="#" method="post">
+                    <form id="commissionForm" method="post">
                         <div class="form-group">
                             <label for="firstName">Name <span class="required">(required)</span></label>
                             <div class="name-fields">
@@ -87,19 +83,16 @@
                                 <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
                             </div>
                         </div>
-                        
                         <div class="form-group">
                             <label for="email">Email <span class="required">(required)</span></label>
                             <input type="email" id="email" name="email" required>
                         </div>
-                        
                         <div class="form-group checkbox-group">
                             <label>
                                 <input type="checkbox" id="newsletter" name="newsletter">
                                 Sign up for news and updates
                             </label>
                         </div>
-                        
                         <div class="form-group">
                             <label for="amount">Amount per Office</label>
                             <div class="amount-input">
@@ -107,17 +100,41 @@
                                 <input type="number" id="amount" name="amount" min="10" placeholder="10" step="1">
                             </div>
                         </div>
-                        
                         <div class="form-group">
                             <label for="intentions">Intentions</label>
                             <textarea id="intentions" name="intentions" placeholder="[Name, number of offices]" rows="4"></textarea>
                         </div>
-                        
                         <button type="submit" class="submit-btn">SUBMIT</button>
                     </form>
                 </div>
             </div>
         </section>
+        <script>
+            document.getElementById('commissionForm').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const formData = new FormData(e.target);
+                const data = {
+                    firstName: formData.get('firstName'),
+                    lastName: formData.get('lastName'),
+                    email: formData.get('email'),
+                    newsletter: formData.get('newsletter') === 'on',
+                    amount: formData.get('amount') || '10', // Default to 10 if empty
+                    intentions: formData.get('intentions') || 'None provided'
+                };
+    
+                try {
+                    const response = await fetch('https://2nhgowaxk8.execute-api.us-east-1.amazonaws.com/default/SendTitheForTraditionEmail', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(data)
+                    });
+                    const result = await response.json();
+                    alert(result.message || result.error);
+                } catch (error) {
+                    alert('Error submitting form: ' + error.message);
+                }
+            });
+        </script>
     </main>
 
     <footer>
