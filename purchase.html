@@ -184,10 +184,6 @@ Newsletter Signup: ${formData.newsletter ? 'Yes' : 'No'}
 Intentions: ${formData.intentions || 'None specified'}
 Submitted: ${new Date(formData.timestamp).toLocaleString()}`);
             
-            // Replace with your email address
-            const emailAddress = 'enzopde24@gmail.com';
-            const mailtoLink = `mailto:${emailAddress}?subject=${subject}&body=${body}`;
-            
             // Fade out the form
             const formContainer = document.querySelector('.commission-form');
             formContainer.style.transition = 'opacity 0.5s ease-out';
@@ -205,11 +201,6 @@ Submitted: ${new Date(formData.timestamp).toLocaleString()}`);
                 formContainer.style.opacity = '1';
                 formContainer.style.transition = 'opacity 0.5s ease-in';
             }, 500);
-            
-            // Open email client after a short delay
-            setTimeout(() => {
-                window.location.href = mailtoLink;
-            }, 1000);
         });
     </script>
         </section>        
