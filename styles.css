@@ -114,6 +114,7 @@ body {
   color: #000000;
   font-feature-settings: "calt" 1, "liga" 1, "dlig" 1, "pnum" 1, "onum" 1, "ss05" 1, "ss06" 1; /* Supported features */
   text-align: justify; /* Added to justify body text */
+  overflow-x: hidden;
 }
 /* Header Styles */
 /* Header Styles */
