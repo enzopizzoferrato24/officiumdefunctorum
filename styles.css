@@ -158,6 +158,8 @@ nav ul {
     max-width: 900px;
     margin: 0 auto;
     justify-content: center;
+    gap: 15 px;
+    flex-wrap: wrap;
 }
 nav li:first-child {
     position: absolute;
@@ -171,7 +173,7 @@ nav li:not(:first-child):not(:last-child) {
     margin: 0 15px;
 }
 nav li {
-    display: inline;
+    display: block;
 }
 header nav ul li a {
     color: #d4b038 !important; /* Override WebKit color */
