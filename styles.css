@@ -153,28 +153,13 @@ nav ul {
     padding: 0;
     display: flex;
     align-items: center;
-    position: relative;
-    width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    justify-content: center;
-    gap: 15 px;
+    gap: 15px;
     flex-wrap: wrap;
+    justify-content: center;
 }
-nav li:first-child {
-    position: absolute;
-    left: 0;
-}
-nav li:last-child {
-    position: absolute;
-    right: 0;
-}
-nav li:not(:first-child):not(:last-child) {
-    margin: 0 15px;
-}
-nav li {
-    display: block;
-}
+
 header nav ul li a {
     color: #d4b038 !important; /* Override WebKit color */
     text-decoration: none !important; /* Override WebKit underline */
