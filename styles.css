@@ -116,7 +116,7 @@ body {
   text-align: justify; /* Added to justify body text */
   overflow-x: hidden;
 }
-/* Header Styles */
+
 /* Header Styles */
 header {
     background-color: #000000;
@@ -130,6 +130,8 @@ header {
     margin-left: -50vw;
     margin-right: -50vw;
     margin-top: -20px;
+    padding-top: env(safe-area-inset-top);
+    background-color: black;
 }
 header h1 {
     font-family: 'Libre Baskerville', serif;
@@ -450,6 +452,7 @@ footer {
     padding: 15px;
     max-width: 100%;
     font-size: 10pt;
+    padding-top: env(safe-area-inset-top);
   }
   main {
     margin-top: 15px;
