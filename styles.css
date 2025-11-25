@@ -445,7 +445,7 @@ footer {
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 736px) {
   body {
     padding: 15px;
     max-width: 100%;
