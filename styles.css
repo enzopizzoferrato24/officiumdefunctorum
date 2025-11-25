@@ -418,7 +418,6 @@ footer {
 }
 
 .mobile-language-selector select {
-  width: 100%;
   padding: 8px 12px;
   font-size: 1em;
   font-family: 'EB Garamond Local', serif;
@@ -427,6 +426,9 @@ footer {
   background-color: white;
   color: #333;
   cursor: pointer;
+  min-width: 100px;
+  max-width: 200px;
+  text-align: center;
 }
 
 .mobile-language-selector select:focus {
@@ -434,6 +436,7 @@ footer {
   border-color: #B22222;
   box-shadow: 0 0 5px rgba(139, 0, 0, 0.3);
 }
+
 /* Responsive design */
 @media (max-width: 768px) {
   body {
@@ -464,10 +467,9 @@ footer {
     top: 0;
     z-index: 100;
     background: white;
-    padding: 15px;
+    padding: 15px 0;
     margin-bottom: 20px;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(220, 20, 60, 0.2);
+    text-align: center;
   }
 
   /* Two-column layout becomes single column with toggle */
