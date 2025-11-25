@@ -451,7 +451,7 @@ footer {
   body {
     padding: 15px;
     max-width: 100%;
-    font-size: 14pt;
+    font-size: 16pt;
     padding-top: env(safe-area-inset-top);
   }
   main {
@@ -468,6 +468,11 @@ footer {
   .prayer-selection select {
     min-width: 250px;
     font-size: 0.9em;
+  }
+    /* You can also adjust paragraph text specifically */
+  p {
+    font-size: 1.2em; /* 110% of body font size */
+    line-height: 1.6;
   }
 
 /* Mobile language selector */
