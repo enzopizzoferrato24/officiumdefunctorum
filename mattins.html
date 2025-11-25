@@ -56,6 +56,14 @@
         </div>
         <h1>Mattins</h1>
 
+        <!-- Mobile Language Selector -->
+        <div class="mobile-language-selector">
+            <select id="languageSelector">
+                <option value="latin">Latin</option>
+                <option value="english">English</option>
+            </select>
+        </div>
+
                 <p class="rubric">¶ When three Nocturns are said, the Antiphons are doubled, and the Office commences with the Invitatory and Psalm 94. Otherwise it begins at once with the first Antiphon. If one Nocturn be said, the first is said on Monday and Thursday; the second on Tuesday and Friday; and third on Wednesday and Saturday.</p>
 
         <div class="prayer-selection">
@@ -2537,5 +2545,18 @@
             }
         }
     </script>
+
+        <script>
+        const languageSelector = document.getElementById('languageSelector');
+        
+        languageSelector.addEventListener('change', function() {
+            if (this.value === 'english') {
+                document.body.classList.add('show-english');
+            } else {
+                document.body.classList.remove('show-english');
+            }
+        });
+    </script>
+    
 </body>
 </html>

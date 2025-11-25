@@ -51,12 +51,22 @@
     </header>
 
     <main>
+
         <div class="page-image-top">
             <img src="/visuals/alphaomega.jpeg" alt="Alpha Omega" class="decorative-image">
         </div>
         <h1>Lauds</h1>
+
+        <!-- Mobile Language Selector -->
+        <div class="mobile-language-selector">
+            <select id="languageSelector">
+                <option value="latin">Latin</option>
+                <option value="english">English</option>
+            </select>
+        </div>
         
         <p class="rubric">¶ The Office begins at once with the first Antiphon, as follows.</p>
+
 
         <div class="paracol">
             <div class="column-left">
@@ -1710,5 +1720,19 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const languageSelector = document.getElementById('languageSelector');
+        
+        languageSelector.addEventListener('change', function() {
+            if (this.value === 'english') {
+                document.body.classList.add('show-english');
+            } else {
+                document.body.classList.remove('show-english');
+            }
+        });
+    </script>
+
+
 </body>
 </html>

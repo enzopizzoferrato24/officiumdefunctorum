@@ -412,6 +412,28 @@ footer {
   display: block;
 }
 
+/* Mobile language selector - hidden on desktop */
+.mobile-language-selector {
+  display: none;
+}
+
+.mobile-language-selector select {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 1em;
+  font-family: 'EB Garamond Local', serif;
+  border: 2px solid #DC143C;
+  border-radius: 4px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+}
+
+.mobile-language-selector select:focus {
+  outline: none;
+  border-color: #B22222;
+  box-shadow: 0 0 5px rgba(139, 0, 0, 0.3);
+}
 /* Responsive design */
 @media (max-width: 768px) {
   body {
@@ -430,18 +452,44 @@ footer {
     flex-direction: column;
     gap: 10px;
   }
-  .paracol {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-  .paracol p:nth-child(odd) {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.5em;
-    margin-bottom: 0.5em;
-  }
   .prayer-selection select {
     min-width: 250px;
     font-size: 0.9em;
+  }
+
+/* Mobile language selector */
+  .mobile-language-selector {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(220, 20, 60, 0.2);
+  }
+
+  /* Two-column layout becomes single column with toggle */
+  .paracol {
+    display: block;
+  }
+
+  .column-left,
+  .column-right {
+    border: none;
+  }
+
+  .column-right {
+    display: none;
+  }
+
+  body.show-english .column-left {
+    display: none;
+  }
+
+  body.show-english .column-right {
+    display: block;
   }
 }
 
