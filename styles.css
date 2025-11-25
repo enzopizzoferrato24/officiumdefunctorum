@@ -429,6 +429,13 @@ footer {
   min-width: 100px;
   max-width: 200px;
   text-align: center;
+
+    
+  /* Hide scrollbar */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: hidden;
 }
 
 .mobile-language-selector select:focus {
