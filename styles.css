@@ -445,7 +445,7 @@ footer {
 }
 
 /* Responsive design */
-@media (max-width: 736px) {
+@media (max-width: 768px) {
   body {
     padding: 15px;
     max-width: 100%;
@@ -519,6 +519,20 @@ footer {
 
   header nav ul li a {
     padding: 6px 10px;
+  }
+
+  * {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  header, main, footer {
+    overflow-x: hidden;
   }
 }
 
