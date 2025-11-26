@@ -472,6 +472,9 @@ footer {
     flex-direction: column;
     gap: 10px;
   }
+  .latin-column{
+    font-size: 16pt
+  }
   .prayer-selection select {
     min-width: 250px;
     font-size: 0.9em;
