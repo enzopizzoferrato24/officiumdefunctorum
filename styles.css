@@ -476,7 +476,6 @@ footer {
     min-width: 250px;
     font-size: 0.9em;
   }
-    /* You can also adjust paragraph text specifically */
   p {
     font-size: 1.2em; /* 110% of body font size */
     line-height: 1.6;
@@ -499,10 +498,9 @@ footer {
   }
 
 /* Mobile language selector */
-  /* Make selector less sticky */
   .mobile-language-selector {
     display: block;
-    position: relative; /* Change from sticky to relative */
+    position: relative; 
     z-index: 100;
     background: white;
     padding: 15px 0;
