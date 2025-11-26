@@ -451,10 +451,13 @@ footer {
     font-size: 16pt;
     padding-top: env(safe-area-inset-top);
     overflow-x: hidden;
+    overflow-y: auto; /* Add this */
     position: relative;
+    -webkit-overflow-scrolling: touch; /* Add smooth scrolling on iOS */
   }
-  html{
+  html {
     overflow-x: hidden;
+    overflow-y: auto; /* Add this */
     max-width: 100vw;
     position: relative;
   }
@@ -496,10 +499,10 @@ footer {
   }
 
 /* Mobile language selector */
+  /* Make selector less sticky */
   .mobile-language-selector {
     display: block;
-    position: sticky;
-    top: 0;
+    position: relative; /* Change from sticky to relative */
     z-index: 100;
     background: white;
     padding: 15px 0;
